@@ -86,15 +86,20 @@ body{
 
 /*Flexbox dentro de Grid*/
 .discografia{
-    padding: 30px;
     height: 1200px;
     grid-area: discografia;
-      
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
 #TOP,#RAB,#vessel,#trench,#blurryface,#SAI{
     width: 300px;
     height: 300px;
+    margin: 5px;
 }
 
 #conciertos{
@@ -128,6 +133,7 @@ a{
 #icon{
     font-size: 30px;
     padding: 15px;
+    : #730202;
 }
 #foto, #foto2{
     min-width: 300px;
