@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+body{
+    margin: 0px;
+}
+.contenedor{
+    display:grid;
+    grid-template-columns: 800px 600px 500px;
+    grid-template-rows: repeat(6, 1000px);
+    grid-template-areas: 
+    " bombones bombones bombones "
+    " inicio inicio inicio "
+    " tortas tortas tortas "
+    " huevos huevos huevos "
+    " cheese cheese cheese "
+    " redes redes redes "
+    " footer footer footer "
+    ;
+    
+}
+.inicio{
+    grid-area: inicio;
+    background: url(img/dulces/tipos-de-chocolates.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 2px 2px 10px black;
+}
+.bombones{
+    grid-area: bombones;
+    background-image: url(img/dulces/bombones-chocolate.jpg);
+    text-shadow: 2px 2px 10px white;
+}
+.tortas{
+    grid-area: tortas;
+    background: url(img/dulces/Tarta-de-Frutas-Frescas-04-1200x675.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 2px 2px 10px black;
+}
+.huevos{
+    grid-area: huevos;
+    background: url(img/dulces/huevos\ rellenos.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 2px 2px 10px white;
+}
+.cheesecake{
+    grid-area: cheese;
+    background: url(img/dulces/chessecake.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 2px 2px 10px black;
+}
+.redes{
+    border:1px black solid;
+    grid-area: redes;
+    background: url(img/dulces/muffins.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 2px 2px 10px white;
+}
+.footer{
+    grid-area: footer;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border: 1px black solid;
+    background-color: #BF8845;
+}
+
+#icon{
+    font-size: 30px;
+    padding: 15px;
+}
+a:visited{
+    color:#592B02;
+}
+#menu{
+    margin: 10px;
+    position: absolute;
+    z-index: 10;
+}
+.menuitem{
+    margin: 0px 1em;
+    color:black;
+    border:1px black solid;
+    padding: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+}
+button{
+    font-size: 20px;
+    background-color: #F2C48D;
+    color: #592B02;
+    -webkit-border-radius: 50px;
+    border: 2px solid #592B02;
+    
+}
+.titulo{
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size:80px;
+    margin:0px;
+}
+.display{
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+figure{
+	position: relative;
+    align-items: right;
+}
+figure img{
+    transition:all 0.6s ease;
+    border:1px black solid;
+}
+figure:hover img{
+	transform:scale(1.2,1.2);
+	transition:all 0.6s ease;
+}
+#imagen{
+    width: 500px;
+    height: 500px;
+    border-radius: 80%;
+}
