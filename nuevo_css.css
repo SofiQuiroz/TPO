@@ -133,7 +133,6 @@ a{
 #icon{
     font-size: 30px;
     padding: 15px;
-    : #730202;
 }
 #foto, #foto2{
     min-width: 300px;
@@ -183,6 +182,10 @@ a{
 }
 
 #blurryface:hover #trans_blurry{
+    margin-top: 30%;
+    transition: all 1s;
+}
+#SAI:hover #trans_sai{
     margin-top: 30%;
     transition: all 1s;
 }
