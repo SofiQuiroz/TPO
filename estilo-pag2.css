@@ -98,8 +98,8 @@ iframe{
     justify-content:flex-start;
     flex-direction: row;
     align-items: center;
-    height: 50px;
-    padding: 10px;
+    height: 80px;
+
     background-color: #F2AB91;
     border: 1px black solid;
 }
@@ -114,4 +114,8 @@ iframe{
 a{
     color:black;
     text-shadow: 2px 2px 10px white;
+}
+
+.boton{
+    align-items: center;
 }
