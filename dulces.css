@@ -19,8 +19,8 @@ body{
 }
 .inicio{
     grid-area: inicio;
-    background: url(img/dulces/tipos-de-chocolates.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(img/dulces/tipos-de-chocolates.jpg) no-repeat;
+    background-size: contain;
     text-shadow: 0.125rem 0.125rem 0.625rem black;
 }
 .bombones{
@@ -130,4 +130,52 @@ figure:hover img{
     width: 31.25rem;
     height: 31.25rem;
     border-radius: 80%;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width:720px){
+    .form{
+        font-size: 40px;
+    }
+    .inicio{
+        background: url(img/dulces/bomboness.jpeg) no-repeat;
+        background-size: cover;
+    }
+}
+
+/*Celulares*/
+@media (max-width: 479px){
+    .contenedor{
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+        grid-template-areas: 
+        " bombones"
+        " inicio"
+        " tortas"
+        " huevos"
+        " cheese"
+        " redes"
+        " footer"
+        ;
+    }
+    .display{
+        display:none;
+    }
+    .titulo{
+        font-size: 30px;
+        margin:0rem;
+    }
+    .bombones{
+        grid-area: bombones;
+        background-image: url(img/dulces/bombones-chocolate.jpg) no-repeat center center ;
+        background-size: cover;
+        text-shadow: 0.125rem 0.125rem 0.625rem white;
+    }
+    .inicio{
+        grid-area: inicio;
+        background: url(img/dulces/tipos-de-chocolates.jpg) no-repeat;
+        background-size: cover;
+        text-shadow: 0.125rem 0.125rem 0.625rem black;
+    }
 }
