@@ -192,10 +192,7 @@ a {
 /* MEDIA QUERY*/
 
 /*celulares*/
-@media (min-width: 479px) {
-  body{
-    width: 100%;
-  }
+@media (max-width: 479px) {
   .contenedor {
     display: grid;
     grid-template-columns: 100%;
