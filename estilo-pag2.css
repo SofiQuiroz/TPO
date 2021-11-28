@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Ephesis&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Ephesis&display=swap");
 
-body{
-    background-color: #F2D4C2;
-    margin:0rem;
+body {
+  background-color: #f2d4c2;
+  margin: 0rem;
 }
-.contenedor{
-    display:grid;
-    grid-template-columns: 0.625rem 1fr 1fr 1fr;
-    grid-template-rows: 15.625rem 63.4375rem 3.75rem 28.125rem 6.25rem 50rem;
-    grid-template-areas: 
-    
+.contenedor {
+  display: grid;
+  grid-template-columns: 0.625rem 1fr 1fr 1fr;
+  grid-template-rows: 18.75rem 910px 3.75rem 28.125rem 6.25rem 50rem;
+  grid-template-areas:
     "titulo titulo titulo titulo"
     ". quienes quienes quienes"
     ". extra extra extra"
@@ -17,105 +16,163 @@ body{
     ". tit tit tit"
     ". . formu .";
 
-    background: url(img/estetica/masaje.jpg) no-repeat;
-    background-size: contain;
-    background-color: #F2D4C2;
+  background: url(img/estetica/masaje.jpg) no-repeat;
+  background-size: contain;
+  background-color: #f2d4c2;
+  overflow: hidden;
 }
-#menu{
-    margin: 0.625rem;
-    position: absolute;
-    z-index: 10;
-}
-
-.boton{
-    margin:0rem 1em;
-    align-self: center;
-}
-#tit{
-    margin: 3.125rem;
-    grid-area: tit;
-    text-align: center;
+#menu {
+  margin: 0.625rem;
+  position: absolute;
+  z-index: 10;
 }
 
-.menuitem{
-    margin: 0rem 1em;
-    color:white;
-    background-color: #F2AB91;
-    padding: 0.625rem;
+.boton {
+  margin: 0rem 1em;
+  align-self: center;
+}
+#tit {
+  margin: 3.125rem;
+  grid-area: tit;
+  text-align: center;
 }
 
-.titulo{
-    color: #F2AB91;
-    -webkit-text-stroke: 0.125rem black;
-    text-shadow: white;
-    grid-area:titulo;
-    text-align: center;
-    font-family: 'Ephesis', cursive;
-    font-size: 12.5rem;
-}
-.menu{
-    grid-area:menu;
-    padding:0.625rem;
-    position: fixed;
-    text-align: center;
-}
-.quienes{
-    grid-area:quienes;
-    padding: 9.375rem;
-    text-align: center;
-    color: black;
-    font-size: 0.9375rem;
-    transition: all 2s;
-    transition-delay: none;
-    font-style: oblique;
-    text-shadow: 0.125rem 0.125rem 0.625rem white;
-    border-bottom:0.0625rem black solid;
-}
-.extra{
-    grid-area: extra;
-    text-align: center;
-    background-color: #F2D4C2;
+.menuitem {
+  margin: 0rem 1em;
+  color: white;
+  background-color: #f2ab91;
+  padding: 0.625rem;
 }
 
-.contacto{
-    grid-area: ubi;
-    padding: 1.25rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
+.titulo {
+  color: #f2ab91;
+  -webkit-text-stroke: 0.125rem black;
+  text-shadow: white;
+  grid-area: titulo;
+  text-align: center;
+  font-family: "Ephesis", cursive;
+  font-size: 12.5rem;
 }
-iframe{
+.menu {
+  grid-area: menu;
+  padding: 0.625rem;
+  position: fixed;
+  text-align: center;
+}
+.quienes {
+  grid-area: quienes;
+  padding: 9.375rem;
+  text-align: center;
+  color: black;
+  font-size: 0.9375rem;
+  transition: all 2s;
+  transition-delay: none;
+  font-style: oblique;
+  text-shadow: 0.125rem 0.125rem 0.625rem white;
+  border-bottom: 0.0625rem black solid;
+}
+.extra {
+  grid-area: extra;
+  text-align: center;
+  background-color: #f2d4c2;
+}
+
+.contacto {
+  grid-area: ubi;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+iframe {
+    width: 600px;
+    height: 450px;
     border: 0.125rem black solid;
 }
-.formularios{
-    grid-area:formu;
-    border:0.0625rem black solid;
-    padding: 0.625rem;
+.formularios {
+  grid-area: formu;
+  border: 0.0625rem black solid;
+  padding: 0.625rem;
 }
-.footer{
-    grid-area: footer;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction: row;
-    align-items: center;
-    height: 5rem;
-
-    background-color: #F2AB91;
-    border: 0.0625rem black solid;
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+  background-color: #f2ab91;
+  border: 0.0625rem black solid;
 }
-#icon{
-    font-size: 1.875rem;
-    padding: 0.9375rem;
-    color: black;
+#icon {
+  font-size: 1.875rem;
+  padding: 0.9375rem;
+  color: black;
 }
-.quienes:hover{
-    font-size: 1.875rem;
-}
-a{
-    color:black;
-    text-shadow: 0.125rem 0.125rem 0.625rem white;
+a {
+  color: black;
+  text-shadow: 0.125rem 0.125rem 0.625rem white;
 }
 
-.boton{
-    align-items: center;
+.boton {
+  align-items: center;
+}
+
+/* MEDIA QUERY*/
+
+@media (min-width: 1000px){
+    .quienes:hover {
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .contenedor {
+        grid-template-columns:100%;
+        grid-template-rows: 15.625rem 31.25rem 3.75rem 40.625rem 6.25rem 52rem;
+        grid-template-areas:
+          "titulo"
+          "quienes"
+          "extra"
+          "ubi"
+          "tit"
+          "formu";
+    }
+    .titulo {
+        color: #f2ab91;
+        -webkit-text-stroke: 0.125rem black;
+        text-shadow: white;
+        grid-area: titulo;
+        text-align: center;
+        font-family: "Ephesis", cursive;
+        font-size: 100px;
+      }
+    .contacto {
+        grid-area: ubi;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    iframe {
+        width: 100%;
+        height: 28.125rem;
+        border: 0.125rem black solid;
+    }
+    .quienes {
+        grid-area: quienes;
+        margin-top: 3.75rem;
+        padding: 0.625rem;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        text-shadow: 0.125rem 0.125rem 0.625rem white;
+    }
+
+    .menu {
+        display: none;
+      }
+    
+    
+
+     
 }
