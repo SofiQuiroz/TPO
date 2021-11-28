@@ -1,14 +1,14 @@
-body{
-    background-color:  #bee3ed;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin:0px;
+body {
+  background-color: #bee3ed;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0rem;
 }
-.contenedor{
-    display: grid;
-    grid-template-columns: 300px 400px 400px 400px;
-    grid-template-rows: 300px;
+.contenedor {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem 25rem;
+  grid-template-rows: 18.75rem;
 
-    grid-template-areas: 
+  grid-template-areas:
     "parallax parallax parallax parallax parallax"
     "parallax parallax parallax parallax parallax"
     ". descripcion descripcion descripcion ."
@@ -23,175 +23,183 @@ body{
     ". conciertos conciertos conciertos ."
     "footer footer footer footer footer"
     "footer footer footer footer footer";
-
 }
-#menu{
-    margin: 10px;
-    position: absolute;
-    z-index: 10;
+#menu {
+  margin: 0.625rem;
+  position: absolute;
+  z-index: 10;
 }
-.menuitem{
-    margin: 0px 1em;
-    color:black;
-    border:1px black solid;
-    background-color:  #bee3ed;
-    padding: 10px;
+.menuitem {
+  margin: 0rem 1em;
+  color: black;
+  border: 1px black solid;
+  background-color: #bee3ed;
+  padding: 0.625rem;
 }
-.titulo{
-    grid-area:titulo;
-    text-align: center;
+.titulo {
+  grid-area: titulo;
+  text-align: center;
 }
-#header{
-    width: 100%;
-    height: 1278px;
-
+#parallax {
+  height: 31.25rem;
+  object-fit: cover;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: #afadde;
+  grid-area: parallax;
+  background: url(img/header.jpg) no-repeat top center;
+  background-size: cover;
 }
-#parallax{
-    height: 500px;
-    object-fit: cover;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    background-color: #AFADDE;
-    grid-area: parallax;
-    background: url(img/header.jpg) no-repeat top center;
-    background-size: cover;
+#descripcion {
+  grid-area: descripcion;
+  padding: 3.125rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  
 }
-#descripcion{
-    grid-area: descripcion;
-    padding: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+#foto {
+  min-width: 18.75rem;
+  max-width: 25rem;
+  height: 31.5625rem;
+  grid-area: foto1;
+  justify-content: center;
 }
-#foto{
-    min-width: 300px;
-    max-width: 400px;
-    height: 505px;
-    grid-area: foto1;
-    justify-content: center;
+#desc {
+  padding: 3.125rem;
+  grid-area: desc1;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-#desc{
-    padding: 50px;
-    grid-area: desc1;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#foto2 {
+  grid-area: foto2;
 }
-#foto2{
-    grid-area: foto2;
-}
-#desc2{
-    padding: 50px;
-    grid-area: desc2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#desc2 {
+  padding: 3.125rem;
+  grid-area: desc2;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*Flexbox dentro de Grid*/
-.discografia{
-    height: 1200px;
-    grid-area: discografia;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    
+.discografia {
+  height: 75rem;
+  grid-area: discografia;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#TOP,#RAB,#vessel,#trench,#blurryface,#SAI{
-    width: 300px;
-    height: 300px;
-    margin: 5px;
+#TOP,
+#RAB,
+#vessel,
+#trench,
+#blurryface,
+#SAI {
+  width: 18.75rem;
+  height: 18.75rem;
+  margin: 0.3125rem;
 }
 
-#conciertos{
-    grid-area: conciertos;
-    height: 500px;
-    background: url(img/conciertos.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 90%;
-    text-align: center;
-    padding: 50px;
-    color: #bee3ed;
-    font-weight:bolder;
+#conciertos {
+  grid-area: conciertos;
+  height: 31.25rem;
+  background: url(img/conciertos.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: 90%;
+  text-align: center;
+  padding: 3.125rem;
+  color: #bee3ed;
+  font-weight: bolder;
 }
-a{
-    color: whitesmoke;
-    font-weight:bolder;
+a {
+  color: whitesmoke;
+  font-weight: bolder;
+}
+.conci {
+  grid-area: conci;
+  text-align: center;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 3.125rem;
+  padding: 0.625rem;
+}
+#icon {
+  font-size: 1.875rem;
+  padding: 0.9375rem;
+}
+#foto,
+#foto2 {
+  min-width: 18.75rem;
+  max-width: 25rem;
+  width: 100%;
+  height: 100%;
+}
 
-}
-.conci{
-    grid-area: conci;
-    text-align: center;
-}
-.footer{
-    grid-area: footer;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction: row;
-    height: 50px;
-    padding: 10px;
-}
-#icon{
-    font-size: 30px;
-    padding: 15px;
-}
-#foto, #foto2{
-    min-width: 300px;
-    max-width: 400px;
-    width: 100%;
-    height: 100%;
-}
-  
 /*TRANSICION */
-#trans_top{
-    text-align: center;
+#trans_top {
+  text-align: center;
 }
-#trans_rab{
-    text-align: center;
+#trans_rab {
+  text-align: center;
 }
-#trans_vessel{
-    text-align: center;
+#trans_vessel {
+  text-align: center;
 }
-#trans_blurry{
-    text-align: center;
+#trans_blurry {
+  text-align: center;
 }
-#trans_trench{
-    text-align: center;
+#trans_trench {
+  text-align: center;
 }
-#trans_sai{
-    text-align: center;
-}
-
-#TOP:hover #trans_top{
-    margin-top: 30%;
-    transition: all 1s;
+#trans_sai {
+  text-align: center;
 }
 
-#RAB:hover #trans_rab{
-    margin-top: 30%;
-    transition: all 1s;
+#TOP:hover #trans_top {
+  margin-top: 30%;
+  transition: all 1s;
 }
 
-#vessel:hover #trans_vessel{
-    margin-top: 30%;
-    transition: all 1s;
+#RAB:hover #trans_rab {
+  margin-top: 30%;
+  transition: all 1s;
 }
 
-#trench:hover #trans_trench{
-    margin-top: 30%;
-    transition: all 1s;
+#vessel:hover #trans_vessel {
+  margin-top: 30%;
+  transition: all 1s;
 }
 
-#blurryface:hover #trans_blurry{
-    margin-top: 30%;
-    transition: all 1s;
-}
-#SAI:hover #trans_sai{
-    margin-top: 30%;
-    transition: all 1s;
+#trench:hover #trans_trench {
+  margin-top: 30%;
+  transition: all 1s;
 }
 
+#blurryface:hover #trans_blurry {
+  margin-top: 30%;
+  transition: all 1s;
+}
+#SAI:hover #trans_sai {
+  margin-top: 30%;
+  transition: all 1s;
+}
 
-    
-    
-    
+/* MEDIA QUERY*/
 
+/*pantallas grandes*/
+@media (max-width: 1200px) {
+  
+}
+/*tablet*/
+@media (max-width: 799px) {
+  
+}
+/*celulares*/
+@media (min-width: 479px) {
+  
+}
